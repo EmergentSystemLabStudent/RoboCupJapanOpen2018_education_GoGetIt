@@ -1,4 +1,4 @@
 <launch>
   <node pkg="kinect_yolo" type="kinect_yolo" name="kinect_yolo"/>
-  <include file="$(find freenect_launch)/launch/freenect.launch"/>
+   <node name="clustering" pkg="kinect_yolo" type="clustering.py" output="screen" />
 </launch>
