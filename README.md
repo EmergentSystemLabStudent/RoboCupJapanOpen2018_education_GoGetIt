@@ -18,4 +18,6 @@ darknet_ros,freenectパッケージを使用しています.
 
 2. `roslaunch freenect_launch freenect.launch` 
 
-2. `roslaunch darknet_ros darknet_ros.launch` 
+2. `roslaunch darknet_ros darknet_ros.launch`
+
+2. `roslaunch kinect_yolo kinect_yolo.launch` 
