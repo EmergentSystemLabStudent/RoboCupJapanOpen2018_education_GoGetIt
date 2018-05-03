@@ -14,7 +14,7 @@ darknet_ros,freenectパッケージを使用しています.
 
 ###### Start
 
-1. `roslaunch edu_go_get_it em_go_get_it.launch` 
+1. `roslaunch edu_go_get_it edu_go_get_it.launch` 
 
 2. `roslaunch freenect_launch freenect.launch` 
 
