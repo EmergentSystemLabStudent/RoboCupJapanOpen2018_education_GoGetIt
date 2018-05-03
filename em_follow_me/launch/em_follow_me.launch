@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="em_followme_withDepth" pkg="em_follow_me" type="em_followme_withDepth.py" output="screen" cwd="node" />
+</launch>

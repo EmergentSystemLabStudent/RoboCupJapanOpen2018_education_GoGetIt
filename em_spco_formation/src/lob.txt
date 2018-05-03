@@ -1,0 +1,1063 @@
+[rospy.client][INFO] 2018-04-27 10:37:06,996: init_node, name[/em_go_get_it_main], pid[10855]
+[xmlrpc][INFO] 2018-04-27 10:37:06,996: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-04-27 10:37:06,996: Started XML-RPC server [http://192.168.1.19:40311/]
+[rospy.init][INFO] 2018-04-27 10:37:06,997: ROS Slave URI: [http://192.168.1.19:40311/]
+[rospy.impl.masterslave][INFO] 2018-04-27 10:37:06,997: _ready: http://192.168.1.19:40311/
+[rospy.registration][INFO] 2018-04-27 10:37:06,997: Registering with master node http://hsrb.local:11311
+[xmlrpc][INFO] 2018-04-27 10:37:06,997: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-04-27 10:37:07,098: registered with master
+[rospy.rosout][INFO] 2018-04-27 10:37:07,099: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-04-27 10:37:07,834: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-04-27 10:37:07,874: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-04-27 10:37:08,172: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:08,486: topic[/edu/text2speech/en] adding connection to [/em_speech], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:08,598: topic[/em/follow_me] adding connection to [/em_followme_withDepth], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:08,687: topic[/em/spco_formation/vocab] adding connection to [/em_word_feature], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:08,688: topic[/em/spco_formation/finish] adding connection to [/em_word_feature], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:08,725: topic[/em/spco/name_sub] adding connection to [/em_name2place], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:08,902: topic[/active/finish] adding connection to [http://192.168.1.19:46873/], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:09,122: topic[/spco/goal/flag] adding connection to [http://192.168.1.19:43331/], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:09,202: topic[/global_pose] adding connection to [http://192.168.1.92:39899/], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:09,440: topic[/active/start] adding connection to [http://192.168.1.19:40539/], count 0
+[rospy.internal][INFO] 2018-04-27 10:37:09,443: topic[/goal/flag] adding connection to [http://192.168.1.19:40539/], count 0
+[rospy.internal][ERROR] 2018-04-27 10:38:24,982: Unable to initiate TCP/IP socket to 192.168.1.19:37889 (http://192.168.1.19:40539/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-04-27 10:38:24,982: Unable to initiate TCP/IP socket to 192.168.1.19:37889 (http://192.168.1.19:40539/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2018-04-27 10:38:25,388: Unknown error initiating TCP/IP socket to 192.168.1.19:47065 (http://192.168.1.19:46873/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 10:38:25,388: topic[/active/finish] removing connection to http://192.168.1.19:46873/
+[rospy.internal][WARNING] 2018-04-27 10:38:25,984: Unknown error initiating TCP/IP socket to 192.168.1.19:37889 (http://192.168.1.19:40539/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][WARNING] 2018-04-27 10:38:25,985: Unknown error initiating TCP/IP socket to 192.168.1.19:37889 (http://192.168.1.19:40539/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-04-27 10:38:25,985: topic[/active/start] removing connection to http://192.168.1.19:40539/
+[rospy.internal][INFO] 2018-04-27 10:38:25,986: topic[/goal/flag] removing connection to http://192.168.1.19:40539/
+[rospy.internal][INFO] 2018-04-27 10:38:53,045: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:33611/], count 0
+[rospy.internal][WARNING] 2018-04-27 10:38:56,198: Unknown error initiating TCP/IP socket to 192.168.1.6:44784 (http://192.168.1.6:33611/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 10:38:56,198: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:33611/
+[rospy.internal][INFO] 2018-04-27 10:39:05,613: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:42751/], count 0
+[rospy.internal][WARNING] 2018-04-27 10:39:08,610: Unknown error initiating TCP/IP socket to 192.168.1.6:38935 (http://192.168.1.6:42751/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 10:39:08,611: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:42751/
+[rospy.internal][INFO] 2018-04-27 10:39:18,039: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:35339/], count 0
+[rospy.internal][WARNING] 2018-04-27 10:39:21,015: Unknown error initiating TCP/IP socket to 192.168.1.6:43775 (http://192.168.1.6:35339/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 10:39:21,016: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:35339/
+[rospy.internal][INFO] 2018-04-27 10:39:25,059: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:42409/], count 0
+[rospy.internal][WARNING] 2018-04-27 10:39:28,188: Unknown error initiating TCP/IP socket to 192.168.1.6:40782 (http://192.168.1.6:42409/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 10:39:28,188: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:42409/
+[rospy.internal][INFO] 2018-04-27 10:39:40,679: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:46793/], count 0
+[rospy.internal][WARNING] 2018-04-27 10:39:43,630: Unknown error initiating TCP/IP socket to 192.168.1.6:33888 (http://192.168.1.6:46793/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 10:39:43,631: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:46793/
+[rospy.internal][INFO] 2018-04-27 10:39:53,508: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:45530/], count 0
+[rospy.internal][INFO] 2018-04-27 10:39:53,655: topic[/move_base/move/goal] adding connection to [/rostopic_4454_1524825490655], count 0
+[rospy.internal][INFO] 2018-04-27 10:39:53,689: topic[/move_base/move/status] adding connection to [http://192.168.1.92:40343/], count 0
+[rospy.internal][INFO] 2018-04-27 10:39:53,741: topic[/move_base/move/feedback] adding connection to [http://192.168.1.92:40343/], count 0
+[rospy.internal][INFO] 2018-04-27 10:39:53,742: topic[/move_base/move/result] adding connection to [http://192.168.1.92:40343/], count 0
+[rospy.internal][INFO] 2018-04-27 10:39:53,862: topic[/move_base/move/cancel] adding connection to [/move_base], count 0
+[rospy.internal][INFO] 2018-04-27 10:39:53,863: topic[/move_base/move/goal] adding connection to [/move_base], count 1
+[rosout][INFO] 2018-04-27 10:40:05,240: Navigation Succeeded.
+[rospy.internal][WARNING] 2018-04-27 10:40:05,326: Unknown error initiating TCP/IP socket to 192.168.1.6:42680 (http://192.168.1.6:45530/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-04-27 10:40:05,327: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:45530/
+[rospy.core][INFO] 2018-04-27 10:40:40,977: signal_shutdown [signal-2]
+[rospy.internal][ERROR] 2018-04-27 10:40:41,068: Unable to initiate TCP/IP socket to 192.168.1.19:33185 (http://192.168.1.19:43331/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-04-27 10:40:41,095: topic[/em/spco_formation/vocab] removing connection to /em_word_feature
+[rospy.internal][INFO] 2018-04-27 10:40:41,096: topic[/move_base/move/cancel] removing connection to /move_base
+[rospy.internal][INFO] 2018-04-27 10:40:41,096: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-04-27 10:40:41,096: topic[/em/spco/name_sub] removing connection to /em_name2place
+[rospy.internal][INFO] 2018-04-27 10:40:41,096: topic[/move_base/move/goal] removing connection to /rostopic_4454_1524825490655
+[rospy.internal][INFO] 2018-04-27 10:40:41,096: topic[/move_base/move/goal] removing connection to /move_base
+[rospy.internal][INFO] 2018-04-27 10:40:41,096: topic[/em/follow_me] removing connection to /em_followme_withDepth
+[rospy.internal][INFO] 2018-04-27 10:40:41,096: topic[/edu/text2speech/en] removing connection to /em_speech
+[rospy.internal][INFO] 2018-04-27 10:40:41,097: topic[/em/spco_formation/finish] removing connection to /em_word_feature
+[rospy.internal][INFO] 2018-04-27 10:40:41,097: topic[/move_base/move/feedback] removing connection to http://192.168.1.92:40343/
+[rospy.internal][INFO] 2018-04-27 10:40:41,097: topic[/spco/goal/flag] removing connection to http://192.168.1.19:43331/
+[rospy.internal][INFO] 2018-04-27 10:40:41,097: topic[/move_base/move/status] removing connection to http://192.168.1.92:40343/
+[rospy.internal][INFO] 2018-04-27 10:40:41,097: topic[/move_base/move/result] removing connection to http://192.168.1.92:40343/
+[rospy.internal][INFO] 2018-04-27 10:40:41,097: topic[/global_pose] removing connection to http://192.168.1.92:39899/
+[rospy.impl.masterslave][INFO] 2018-04-27 10:40:41,097: signal-2
+[rospy.core][INFO] 2018-04-27 10:40:41,662: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-04-27 11:25:08,006: init_node, name[/em_go_get_it_main], pid[21354]
+[xmlrpc][INFO] 2018-04-27 11:25:08,006: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-04-27 11:25:08,006: Started XML-RPC server [http://192.168.1.19:32983/]
+[rospy.init][INFO] 2018-04-27 11:25:08,007: ROS Slave URI: [http://192.168.1.19:32983/]
+[rospy.impl.masterslave][INFO] 2018-04-27 11:25:08,007: _ready: http://192.168.1.19:32983/
+[xmlrpc][INFO] 2018-04-27 11:25:08,007: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-04-27 11:25:08,007: Registering with master node http://hsrb.local:11311
+[rospy.init][INFO] 2018-04-27 11:25:08,107: registered with master
+[rospy.rosout][INFO] 2018-04-27 11:25:08,107: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-04-27 11:25:08,153: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-04-27 11:25:08,203: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-04-27 11:25:08,339: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:08,419: topic[/edu/text2speech/en] adding connection to [/em_speech], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:08,494: topic[/em/follow_me] adding connection to [/em_followme_withDepth], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:08,595: topic[/em/spco_formation/vocab] adding connection to [/em_word_feature], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:08,596: topic[/em/spco_formation/finish] adding connection to [/em_word_feature], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:08,643: topic[/em/spco/name_sub] adding connection to [/em_name2place], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:08,746: topic[/active/start] adding connection to [http://192.168.1.19:35467/], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:08,936: topic[/active/finish] adding connection to [http://192.168.1.19:45845/], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:09,089: topic[/goal/flag] adding connection to [http://192.168.1.19:35467/], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:09,216: topic[/spco/goal/flag] adding connection to [http://192.168.1.19:42277/], count 0
+[rospy.internal][INFO] 2018-04-27 11:25:09,615: topic[/global_pose] adding connection to [http://192.168.1.92:43846/], count 0
+[rospy.internal][ERROR] 2018-04-27 11:26:48,487: Unable to initiate TCP/IP socket to 192.168.1.19:42017 (http://192.168.1.19:35467/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-04-27 11:26:48,488: Unable to initiate TCP/IP socket to 192.168.1.19:42017 (http://192.168.1.19:35467/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2018-04-27 11:26:48,798: Unknown error initiating TCP/IP socket to 192.168.1.19:35521 (http://192.168.1.19:45845/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:26:48,798: topic[/active/finish] removing connection to http://192.168.1.19:45845/
+[rospy.internal][WARNING] 2018-04-27 11:26:49,489: Unknown error initiating TCP/IP socket to 192.168.1.19:42017 (http://192.168.1.19:35467/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][WARNING] 2018-04-27 11:26:49,489: Unknown error initiating TCP/IP socket to 192.168.1.19:42017 (http://192.168.1.19:35467/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-04-27 11:26:49,490: topic[/goal/flag] removing connection to http://192.168.1.19:35467/
+[rospy.internal][INFO] 2018-04-27 11:26:49,490: topic[/active/start] removing connection to http://192.168.1.19:35467/
+[rospy.internal][INFO] 2018-04-27 11:27:02,369: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:42203/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:27:05,322: Unknown error initiating TCP/IP socket to 192.168.1.6:33764 (http://192.168.1.6:42203/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:27:05,322: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:42203/
+[rospy.internal][INFO] 2018-04-27 11:27:17,435: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:44324/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:27:20,460: Unknown error initiating TCP/IP socket to 192.168.1.6:38640 (http://192.168.1.6:44324/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:27:20,460: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:44324/
+[rospy.internal][INFO] 2018-04-27 11:27:28,721: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:38020/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:27:31,947: Unknown error initiating TCP/IP socket to 192.168.1.6:43621 (http://192.168.1.6:38020/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:27:31,948: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:38020/
+[rospy.internal][INFO] 2018-04-27 11:27:37,887: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:33286/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:27:39,950: Unknown error initiating TCP/IP socket to 192.168.1.6:36292 (http://192.168.1.6:33286/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:27:39,950: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:33286/
+[rospy.internal][INFO] 2018-04-27 11:27:45,513: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:46736/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:27:48,894: Unknown error initiating TCP/IP socket to 192.168.1.6:35128 (http://192.168.1.6:46736/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 11:27:48,895: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:46736/
+[rospy.internal][INFO] 2018-04-27 11:28:00,521: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:43524/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:28:03,502: Unknown error initiating TCP/IP socket to 192.168.1.6:43073 (http://192.168.1.6:43524/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:28:03,502: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:43524/
+[rospy.internal][INFO] 2018-04-27 11:28:11,319: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:35994/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:28:14,278: Unknown error initiating TCP/IP socket to 192.168.1.6:37535 (http://192.168.1.6:35994/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:28:14,278: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:35994/
+[rospy.internal][INFO] 2018-04-27 11:28:18,708: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:43779/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:28:21,856: Unknown error initiating TCP/IP socket to 192.168.1.6:45127 (http://192.168.1.6:43779/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:28:21,857: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:43779/
+[rospy.internal][INFO] 2018-04-27 11:28:30,038: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:44004/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:28:33,087: Unknown error initiating TCP/IP socket to 192.168.1.6:40238 (http://192.168.1.6:44004/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:28:33,087: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:44004/
+[rospy.internal][INFO] 2018-04-27 11:28:46,212: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:38493/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:28:49,144: Unknown error initiating TCP/IP socket to 192.168.1.6:45493 (http://192.168.1.6:38493/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:28:49,144: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:38493/
+[rospy.internal][INFO] 2018-04-27 11:28:52,897: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:38089/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:28:55,829: Unknown error initiating TCP/IP socket to 192.168.1.6:38286 (http://192.168.1.6:38089/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:28:55,830: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:38089/
+[rospy.internal][INFO] 2018-04-27 11:29:31,226: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:43960/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:29:34,250: Unknown error initiating TCP/IP socket to 192.168.1.6:46394 (http://192.168.1.6:43960/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:29:34,250: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:43960/
+[rospy.internal][INFO] 2018-04-27 11:29:39,298: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:43431/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:29:42,568: Unknown error initiating TCP/IP socket to 192.168.1.6:41625 (http://192.168.1.6:43431/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:29:42,569: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:43431/
+[rospy.internal][INFO] 2018-04-27 11:29:49,972: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:41208/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:29:52,982: Unknown error initiating TCP/IP socket to 192.168.1.6:44924 (http://192.168.1.6:41208/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:29:52,982: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:41208/
+[rospy.internal][INFO] 2018-04-27 11:30:29,514: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:34555/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:30:32,548: Unknown error initiating TCP/IP socket to 192.168.1.6:41626 (http://192.168.1.6:34555/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 11:30:32,549: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:34555/
+[rospy.internal][INFO] 2018-04-27 11:30:40,519: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:37729/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:30:43,494: Unknown error initiating TCP/IP socket to 192.168.1.6:41530 (http://192.168.1.6:37729/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:30:43,494: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:37729/
+[rospy.internal][INFO] 2018-04-27 11:30:49,611: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:44230/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:30:52,533: Unknown error initiating TCP/IP socket to 192.168.1.6:38560 (http://192.168.1.6:44230/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:30:52,534: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:44230/
+[rospy.internal][INFO] 2018-04-27 11:30:58,885: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:34897/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:31:01,912: Unknown error initiating TCP/IP socket to 192.168.1.6:42388 (http://192.168.1.6:34897/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:31:01,912: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:34897/
+[rospy.internal][INFO] 2018-04-27 11:31:05,885: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:42417/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:31:08,845: Unknown error initiating TCP/IP socket to 192.168.1.6:46292 (http://192.168.1.6:42417/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:31:08,846: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:42417/
+[rospy.internal][INFO] 2018-04-27 11:31:12,778: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:43878/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:31:15,518: Unknown error initiating TCP/IP socket to 192.168.1.6:40327 (http://192.168.1.6:43878/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:31:15,519: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:43878/
+[rospy.internal][INFO] 2018-04-27 11:31:28,756: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:44004/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:31:32,037: Unknown error initiating TCP/IP socket to 192.168.1.6:46818 (http://192.168.1.6:44004/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:31:32,037: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:44004/
+[rospy.internal][INFO] 2018-04-27 11:31:41,632: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:43565/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:31:45,963: Unknown error initiating TCP/IP socket to 192.168.1.6:34104 (http://192.168.1.6:43565/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:31:45,964: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:43565/
+[rospy.internal][INFO] 2018-04-27 11:31:59,453: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:35776/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:32:02,274: Unknown error initiating TCP/IP socket to 192.168.1.6:46625 (http://192.168.1.6:35776/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 11:32:02,274: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:35776/
+[rospy.internal][INFO] 2018-04-27 11:32:10,830: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:46245/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:32:14,633: Unknown error initiating TCP/IP socket to 192.168.1.6:39194 (http://192.168.1.6:46245/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:32:14,633: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:46245/
+[rospy.internal][INFO] 2018-04-27 11:32:29,255: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:33420/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:32:32,107: Unknown error initiating TCP/IP socket to 192.168.1.6:40539 (http://192.168.1.6:33420/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:32:32,107: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:33420/
+[rospy.internal][INFO] 2018-04-27 11:32:43,884: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:40238/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:32:46,828: Unknown error initiating TCP/IP socket to 192.168.1.6:40551 (http://192.168.1.6:40238/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 11:32:46,829: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:40238/
+[rospy.internal][INFO] 2018-04-27 11:32:52,454: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:38173/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:32:55,679: Unknown error initiating TCP/IP socket to 192.168.1.6:43115 (http://192.168.1.6:38173/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:32:55,679: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:38173/
+[rospy.internal][INFO] 2018-04-27 11:33:02,622: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:40406/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:33:05,699: Unknown error initiating TCP/IP socket to 192.168.1.6:38292 (http://192.168.1.6:40406/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:33:05,699: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:40406/
+[rospy.internal][INFO] 2018-04-27 11:33:11,098: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:41667/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:33:14,089: Unknown error initiating TCP/IP socket to 192.168.1.6:39179 (http://192.168.1.6:41667/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:33:14,090: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:41667/
+[rospy.internal][INFO] 2018-04-27 11:33:19,568: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:38505/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:33:22,561: Unknown error initiating TCP/IP socket to 192.168.1.6:46537 (http://192.168.1.6:38505/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 11:33:22,562: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:38505/
+[rospy.internal][INFO] 2018-04-27 11:34:34,632: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:46593/], count 0
+[rospy.internal][INFO] 2018-04-27 11:34:35,623: topic[/em/spco_formation/learned] adding connection to [http://192.168.1.19:41921/], count 0
+[rospy.internal][ERROR] 2018-04-27 11:34:36,801: Unable to initiate TCP/IP socket to 192.168.1.19:34099 (http://192.168.1.19:41921/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2018-04-27 11:34:37,625: Unknown error initiating TCP/IP socket to 192.168.1.6:35411 (http://192.168.1.6:46593/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:34:37,626: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:46593/
+[rospy.internal][WARNING] 2018-04-27 11:34:37,803: Unknown error initiating TCP/IP socket to 192.168.1.19:34099 (http://192.168.1.19:41921/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-04-27 11:34:37,803: topic[/em/spco_formation/learned] removing connection to http://192.168.1.19:41921/
+[rospy.internal][INFO] 2018-04-27 11:35:00,064: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:46242/], count 0
+[rospy.internal][INFO] 2018-04-27 11:35:00,541: topic[/move_base/move/goal] adding connection to [/rostopic_4454_1524825490655], count 0
+[rospy.internal][INFO] 2018-04-27 11:35:00,756: topic[/move_base/move/goal] adding connection to [/move_base], count 1
+[rospy.internal][INFO] 2018-04-27 11:35:01,017: topic[/move_base/move/cancel] adding connection to [/move_base], count 0
+[rospy.internal][INFO] 2018-04-27 11:35:01,788: topic[/move_base/move/status] adding connection to [http://192.168.1.92:32888/], count 0
+[rospy.internal][INFO] 2018-04-27 11:35:01,929: topic[/move_base/move/result] adding connection to [http://192.168.1.92:32888/], count 0
+[rospy.internal][INFO] 2018-04-27 11:35:01,987: topic[/move_base/move/feedback] adding connection to [http://192.168.1.92:32888/], count 0
+[rosout][INFO] 2018-04-27 11:35:08,145: Navigation Succeeded.
+[rospy.internal][WARNING] 2018-04-27 11:35:08,178: Unknown error initiating TCP/IP socket to 192.168.1.6:46826 (http://192.168.1.6:46242/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-04-27 11:35:08,179: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:46242/
+[rospy.internal][INFO] 2018-04-27 11:35:38,747: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:38171/], count 0
+[rospy.internal][WARNING] 2018-04-27 11:35:41,839: Unknown error initiating TCP/IP socket to 192.168.1.6:44567 (http://192.168.1.6:38171/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 11:35:41,839: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:38171/
+[rospy.internal][INFO] 2018-04-27 11:36:25,778: topic[/move_base/move/goal] removing connection to /rostopic_4454_1524825490655
+[rospy.internal][INFO] 2018-04-27 11:36:29,282: topic[/move_base/move/goal] adding connection to [/rostopic_6668_1524828988080], count 1
+[rospy.core][INFO] 2018-04-27 11:38:46,661: signal_shutdown [signal-2]
+[rospy.internal][ERROR] 2018-04-27 11:38:46,827: Unable to initiate TCP/IP socket to 192.168.1.19:34581 (http://192.168.1.19:42277/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-04-27 11:38:46,873: topic[/em/spco_formation/vocab] removing connection to /em_word_feature
+[rospy.internal][INFO] 2018-04-27 11:38:46,874: topic[/move_base/move/cancel] removing connection to /move_base
+[rospy.internal][INFO] 2018-04-27 11:38:46,874: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-04-27 11:38:46,874: topic[/em/spco/name_sub] removing connection to /em_name2place
+[rospy.internal][INFO] 2018-04-27 11:38:46,874: topic[/move_base/move/goal] removing connection to /move_base
+[rospy.internal][INFO] 2018-04-27 11:38:46,874: topic[/move_base/move/goal] removing connection to /rostopic_6668_1524828988080
+[rospy.internal][INFO] 2018-04-27 11:38:46,874: topic[/em/follow_me] removing connection to /em_followme_withDepth
+[rospy.internal][INFO] 2018-04-27 11:38:46,875: topic[/edu/text2speech/en] removing connection to /em_speech
+[rospy.internal][INFO] 2018-04-27 11:38:46,875: topic[/em/spco_formation/finish] removing connection to /em_word_feature
+[rospy.internal][INFO] 2018-04-27 11:38:46,875: topic[/move_base/move/feedback] removing connection to http://192.168.1.92:32888/
+[rospy.topics][ERROR] 2018-04-27 11:38:46,875: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2018-04-27 11:38:46,875: topic[/spco/goal/flag] removing connection to http://192.168.1.19:42277/
+[rospy.internal][INFO] 2018-04-27 11:38:46,875: topic[/move_base/move/status] removing connection to http://192.168.1.92:32888/
+[rospy.internal][INFO] 2018-04-27 11:38:46,876: topic[/move_base/move/result] removing connection to http://192.168.1.92:32888/
+[rospy.internal][INFO] 2018-04-27 11:38:46,876: topic[/global_pose] removing connection to http://192.168.1.92:43846/
+[rospy.impl.masterslave][INFO] 2018-04-27 11:38:46,876: signal-2
+[rospy.internal][WARNING] 2018-04-27 11:38:46,925: Unknown error initiating TCP/IP socket to 192.168.1.92:33293 (http://192.168.1.92:32888/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.core][INFO] 2018-04-27 11:38:47,290: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-04-27 12:08:11,574: init_node, name[/em_go_get_it_main], pid[21858]
+[xmlrpc][INFO] 2018-04-27 12:08:11,575: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-04-27 12:08:11,575: Started XML-RPC server [http://192.168.1.19:34011/]
+[rospy.init][INFO] 2018-04-27 12:08:11,575: ROS Slave URI: [http://192.168.1.19:34011/]
+[rospy.impl.masterslave][INFO] 2018-04-27 12:08:11,575: _ready: http://192.168.1.19:34011/
+[rospy.registration][INFO] 2018-04-27 12:08:11,576: Registering with master node http://hsrb.local:11311
+[xmlrpc][INFO] 2018-04-27 12:08:11,576: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2018-04-27 12:08:11,675: registered with master
+[rospy.rosout][INFO] 2018-04-27 12:08:11,676: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-04-27 12:08:11,705: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-04-27 12:08:11,742: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-04-27 12:08:12,021: topic[/edu/text2speech/en] adding connection to [/em_speech], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:12,078: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:12,218: topic[/em/follow_me] adding connection to [/em_followme_withDepth], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:12,366: topic[/em/spco_formation/finish] adding connection to [/em_word_feature], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:12,367: topic[/em/spco_formation/vocab] adding connection to [/em_word_feature], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:12,432: topic[/em/spco/name_sub] adding connection to [/em_name2place], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:12,720: topic[/active/start] adding connection to [http://192.168.1.19:36761/], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:12,832: topic[/active/finish] adding connection to [http://192.168.1.19:46035/], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:13,027: topic[/goal/flag] adding connection to [http://192.168.1.19:36761/], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:13,203: topic[/spco/goal/flag] adding connection to [http://192.168.1.19:45309/], count 0
+[rospy.internal][INFO] 2018-04-27 12:08:13,480: topic[/global_pose] adding connection to [http://192.168.1.92:38607/], count 0
+[rospy.internal][ERROR] 2018-04-27 12:09:33,913: Unable to initiate TCP/IP socket to 192.168.1.19:35971 (http://192.168.1.19:36761/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-04-27 12:09:33,914: Unable to initiate TCP/IP socket to 192.168.1.19:35971 (http://192.168.1.19:36761/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2018-04-27 12:09:33,945: Unknown error initiating TCP/IP socket to 192.168.1.19:41981 (http://192.168.1.19:46035/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:09:33,945: topic[/active/finish] removing connection to http://192.168.1.19:46035/
+[rospy.internal][WARNING] 2018-04-27 12:09:34,916: Unknown error initiating TCP/IP socket to 192.168.1.19:35971 (http://192.168.1.19:36761/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][WARNING] 2018-04-27 12:09:34,916: Unknown error initiating TCP/IP socket to 192.168.1.19:35971 (http://192.168.1.19:36761/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-04-27 12:09:34,917: topic[/goal/flag] removing connection to http://192.168.1.19:36761/
+[rospy.internal][INFO] 2018-04-27 12:09:34,919: topic[/active/start] removing connection to http://192.168.1.19:36761/
+[rospy.internal][INFO] 2018-04-27 12:09:39,043: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:40635/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:09:41,896: Unknown error initiating TCP/IP socket to 192.168.1.6:34855 (http://192.168.1.6:40635/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:09:41,896: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:40635/
+[rospy.internal][INFO] 2018-04-27 12:09:55,765: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:46470/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:09:58,790: Unknown error initiating TCP/IP socket to 192.168.1.6:44090 (http://192.168.1.6:46470/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:09:58,790: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:46470/
+[rospy.internal][INFO] 2018-04-27 12:10:06,275: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:33111/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:09,336: Unknown error initiating TCP/IP socket to 192.168.1.6:34160 (http://192.168.1.6:33111/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:09,337: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:33111/
+[rospy.internal][INFO] 2018-04-27 12:10:14,462: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:37789/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:17,435: Unknown error initiating TCP/IP socket to 192.168.1.6:39528 (http://192.168.1.6:37789/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:17,436: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:37789/
+[rospy.internal][INFO] 2018-04-27 12:10:21,411: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:45221/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:24,325: Unknown error initiating TCP/IP socket to 192.168.1.6:43403 (http://192.168.1.6:45221/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:24,326: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:45221/
+[rospy.internal][INFO] 2018-04-27 12:10:27,630: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:40785/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:30,597: Unknown error initiating TCP/IP socket to 192.168.1.6:46162 (http://192.168.1.6:40785/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:30,597: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:40785/
+[rospy.internal][INFO] 2018-04-27 12:10:34,304: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:37167/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:37,330: Unknown error initiating TCP/IP socket to 192.168.1.6:45540 (http://192.168.1.6:37167/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:37,331: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:37167/
+[rospy.internal][INFO] 2018-04-27 12:10:40,124: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:45060/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:43,077: Unknown error initiating TCP/IP socket to 192.168.1.6:32809 (http://192.168.1.6:45060/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:43,078: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:45060/
+[rospy.internal][INFO] 2018-04-27 12:10:46,947: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:37482/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:49,955: Unknown error initiating TCP/IP socket to 192.168.1.6:42574 (http://192.168.1.6:37482/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:49,955: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:37482/
+[rospy.internal][INFO] 2018-04-27 12:10:53,061: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:44549/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:10:56,087: Unknown error initiating TCP/IP socket to 192.168.1.6:45705 (http://192.168.1.6:44549/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:10:56,087: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:44549/
+[rospy.internal][INFO] 2018-04-27 12:11:00,065: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:34372/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:11:03,149: Unknown error initiating TCP/IP socket to 192.168.1.6:43063 (http://192.168.1.6:34372/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:11:03,150: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:34372/
+[rospy.internal][INFO] 2018-04-27 12:11:05,736: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:45949/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:11:08,936: Unknown error initiating TCP/IP socket to 192.168.1.6:43123 (http://192.168.1.6:45949/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2018-04-27 12:11:08,936: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:45949/
+[rospy.internal][INFO] 2018-04-27 12:11:12,858: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:34164/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:11:15,772: Unknown error initiating TCP/IP socket to 192.168.1.6:45795 (http://192.168.1.6:34164/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:11:15,772: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:34164/
+[rospy.internal][INFO] 2018-04-27 12:11:43,731: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:46327/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:11:46,763: Unknown error initiating TCP/IP socket to 192.168.1.6:37326 (http://192.168.1.6:46327/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:11:46,764: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:46327/
+[rospy.internal][INFO] 2018-04-27 12:11:52,854: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:37387/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:11:55,770: Unknown error initiating TCP/IP socket to 192.168.1.6:33544 (http://192.168.1.6:37387/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:11:55,770: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:37387/
+[rospy.internal][INFO] 2018-04-27 12:11:58,627: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:37357/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:12:01,577: Unknown error initiating TCP/IP socket to 192.168.1.6:45720 (http://192.168.1.6:37357/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:12:01,577: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:37357/
+[rospy.internal][INFO] 2018-04-27 12:12:04,398: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:34392/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:12:07,340: Unknown error initiating TCP/IP socket to 192.168.1.6:42373 (http://192.168.1.6:34392/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:12:07,340: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:34392/
+[rospy.internal][INFO] 2018-04-27 12:12:10,580: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:40629/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:12:13,396: Unknown error initiating TCP/IP socket to 192.168.1.6:32985 (http://192.168.1.6:40629/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2018-04-27 12:12:13,397: topic[/rospeex/speech2text/en] removing connection to http://192.168.1.6:40629/
+[rospy.internal][INFO] 2018-04-27 12:12:16,228: topic[/rospeex/speech2text/en] adding connection to [http://192.168.1.6:36992/], count 0
+[rospy.internal][WARNING] 2018-04-27 12:12:49,191: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:13:20,204: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:13:52,208: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:14:26,226: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:14:37,305: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][INFO] 2018-04-27 12:14:43,343: topic[/rosout] removing connection to /rosout
+[rospy.internal][ERROR] 2018-04-27 12:14:51,897: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 729, in receive_once
+    self.stat_bytes += recv_buff(sock, b, p.buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 103, in recv_buff
+    d = sock.recv(buff_size)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:14:56,377: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:15:21,922: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:15:23,641: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:15:26,713: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:15:33,785: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:15:44,121: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:15:58,421: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:16:03,193: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:16:33,529: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:17:05,225: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:17:08,633: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:17:43,737: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+
+[rospy.internal][WARNING] 2018-04-27 12:18:07,282: Unknown error initiating TCP/IP socket to 192.168.1.92:44741 (http://192.168.1.92:38607/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[rospy.internal][WARNING] 2018-04-27 12:18:18,808: Unknown error initiating TCP/IP socket to 192.168.1.6:43536 (http://192.168.1.6:36992/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 113] No route to host
+

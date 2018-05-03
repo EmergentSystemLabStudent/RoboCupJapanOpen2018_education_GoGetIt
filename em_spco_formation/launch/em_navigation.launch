@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="em_path_plan" pkg="em_spco_formation" type="em_path_plan.py" output="screen" cwd="node" />
+  <node name="em_name2place" pkg="em_spco_formation" type="em_name2place.py" output="screen" cwd="node" />
+</launch>

@@ -1,0 +1,4 @@
+-gram ./Grammer/edu
+-h model/phone_m/hmmdefs_ptm_gid.binhmm
+-hlist model/phone_m/logicalTri
+-input mic -demo

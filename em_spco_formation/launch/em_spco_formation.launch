@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="em_word_feature" pkg="em_spco_formation" type="em_word_feature.py" output="screen" cwd="node" />
+  <node name="em_image_feature" pkg="em_spco_formation" type="em_image_feature.py" output="screen" cwd="node" />
+  <node name="em_pose" pkg="em_spco_formation" type="em_pose.py" output="screen" cwd="node" />
+
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find em_spco_formation)/launch/em_spco_formation.rviz" respawn="false"/> -->
+
+</launch>

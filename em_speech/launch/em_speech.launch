@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="em_speech" pkg="em_speech" type="em_speech.py" output="screen" />
+</launch>

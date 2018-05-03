@@ -1,0 +1,10 @@
+data space_name class
+1 TV 0
+2 TV 0
+3 TV 0
+4 sofa 6
+5 sofa 6
+6 sofa 6
+7 strash 3
+8 strash 3
+9 strash 3

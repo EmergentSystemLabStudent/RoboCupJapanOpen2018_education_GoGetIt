@@ -1,0 +1,14 @@
+alfa: 5.0
+ beta: 0.01
+kappa_0: 0.029999999999999999
+nu_0: 1000.0
+mu_0: array([ 0.,  0.,  0.,  0.])
+psai_0: matrix([[ 1.,  0.,  0.,  0.],
+        [ 0.,  1.,  0.,  0.],
+        [ 0.,  0.,  1.,  0.],
+        [ 0.,  0.,  0.,  1.]])
+gamma: 10000000.0
+initial sigma: 100.0
+sitck break limit: 13
+space_name:corridor,living room,kitchen,bed,trash,counter,in front of bowl,cabinet,
+Iteration:50

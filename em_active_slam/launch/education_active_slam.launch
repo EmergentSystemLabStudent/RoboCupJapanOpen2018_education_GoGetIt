@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="em_frontier_approach" pkg="em_active_slam" type="em_frontier_approach" output="screen" />
+
+  <node name="em_active_path_plan" pkg="em_active_slam" type="em_active_path_plan.py" output="screen" />
+
+  <node pkg="urg_node" type="urg_node" name="urg_node">
+   <param name="ip_address" value="192.168.0.10" />
+  </node>
+
+  <include file="$(find em_active_slam)/launch/gmapping.launch.xml" />
+
+  <node pkg="rviz" type="rviz" name="rviz1" args="-d $(find hector_slam_example)/launch/rviz_cfg.rviz"/>
+
+</launch>
+

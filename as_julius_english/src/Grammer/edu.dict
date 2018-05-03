@@ -1,0 +1,67 @@
+0	[Finish-SLAM]	f i n i sh u s u r a m u
+0	[Follow-Me]	f o r o m i:
+0	[Stop-Follow-Me]	s u t o p u f o r o m i:
+0	[Start-Position-Is-Here]	s u t a: t o p o j i sh o N i z u h i a:
+0	[Yes]	i e s u
+0	[No]	n o:
+0	[Return-To-Start-Position]	r i t a: N t o: s u t a: t o p o j i sh o N
+0	[Learn-Spatial-Concept]	r a: N s u p e i sh a r u k o N s e p u t o
+1	[Bring-Me-]	b u r i N g u m i:
+2	[In-]	i N
+3	[From-]	f u r o m u
+4	[In-Front-Of-]	i N f u r o N t o o b u
+5	[The-]	z a
+6	[A-]	a
+7	[An-]	a N
+8	[Here-Is-]	h i a i z u
+9	[Here-Is-In-Front-Of-]	h i a i z u i N f u r o N t o o b u
+10	[Bed]	b e q d o
+10	[Bedroom]	b e q d o r u: m u
+10	[Bedside]	b e q d o s a i d o
+10	[Bookcase]	b u q k u k e i s u
+10	[Book-Shelf]	b u q k u sh e r u f u
+10	[Chair]	ch e a:
+10	[Childroom]	ch a i r u d o r u: m u
+10	[Corridor]	k o r i d o:
+10	[Cupboard]	k a q p u b o: d o
+10	[Desk]	d e s u k u
+10	[Dining-Table]	d a i n i N g u t e: b u r u
+10	[Entrance]	e N t o r a N s u
+10	[Kids-room]	k i q z u r u: m u
+10	[Kitchen]	k i q ch i N
+10	[Kitchen-chair]	k i q ch i N ch e a:
+10	[Kitchen-rack]	k i q ch i N r a q k u
+10	[Kitchen-shelf]	k i q ch i N sh e r u f u
+10	[Kitchen-table]	k i q ch i N t e: b u r u
+10	[Learning-desk]	r a: n i N g u d e s u k u
+10	[Living-Room]	r i b i N g u r u: m u
+10	[Living-Space]	r i b i N g u s u p e: s u
+10	[Living-Shelf]	r i b i N g u sh e r u f u
+10	[Living-Table]	r i b i N g u t e: b u r u
+10	[Low-table]	r o: t e: b u r u
+10	[Sofa]	s o f a:
+10	[Study-desk]	s u t a d i: d e s u k u
+10	[Teepee]	t i: p i:
+10	[Tent]	t e N t o
+11	[Biscuit]	b i s u k e q t o
+11	[Bottle]	b o t o r u
+11	[Chewing-gum]	ch u: i N g u g a m u
+11	[Curry]	k a r i:
+11	[Drink]	d o r i N k u
+11	[Energy-drink]	e n a j i: d o r i N k u
+11	[Food]	f u: d o
+11	[Fruit]	f u r u: ts u
+11	[Green-object]	g u r i: N o b u j e k u t o
+11	[Gum]	g a m u
+11	[Jam]	j a m u
+11	[Juice]	j u: s u
+11	[Kiwi]	k i u i
+11	[Orange-object]	o r e N j i o b u j e k u t o
+11	[Snack]	s u n a q k u
+11	[Soy-milk]	s o i m i r u k u
+11	[Soup]	s u: p u
+11	[Tangerine]	t a N j e r i N
+11	[Tea]	t i:
+11	[Red-object]	r e q d o o b u j e k u t o
+12	[silB]	silB
+13	[silE]	silE

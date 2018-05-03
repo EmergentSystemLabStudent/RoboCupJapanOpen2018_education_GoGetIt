@@ -1,0 +1,8 @@
+corridor
+living room
+kitchen
+bed
+trash
+counter
+in front of bowl
+cabinet

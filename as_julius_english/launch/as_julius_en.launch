@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="as_julius_english" pkg="as_julius_english" type="as_julius_english" output="screen" />
+</launch>

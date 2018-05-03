@@ -1,0 +1,19 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4504   792 ?        Ss   09:08   0:00 sh ./scripts/keep-container-running.sh
+root         7  0.0  0.0   4408   736 ?        S    09:08   0:00 tail -f /dev/null
+root      9595  0.0  0.0  43604   376 ?        S    10:08   0:00 dbus-launch --autolaunch dbec18af24f3c11657e33edc5ae276b7 --binary-syntax --close-stderr
+root      9596  0.0  0.0  42772  2776 ?        Ss   10:08   0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+root     10662  0.0  0.0  19056  4144 pts/0    Ss   10:36   0:00 bash
+root     21689  0.3  0.1 315720 54936 pts/0    Sl+  12:08   0:01 /usr/bin/python /opt/ros/kinetic/bin/roslaunch em_go_get_it em_go_get_it.launch
+root     21717  0.2  0.1 799420 56232 ?        Ssl  12:08   0:01 python /root/catkin_ws/src/em_spco_formation/src/em_word_feature.py __name:=em_word_feature __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_word_feature-5.log
+root     21722  2.6  4.3 16678424 1415976 ?    Ssl  12:08   0:14 python /root/catkin_ws/src/em_spco_formation/src/em_image_feature.py __name:=em_image_feature __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_image_feature-6.log
+root     21732  0.5  0.1 578744 56672 ?        Ssl  12:08   0:03 python /root/catkin_ws/src/em_spco_formation/src/em_pose.py __name:=em_pose __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_pose-7.log
+root     21775 11.9  0.3 996116 101368 ?       Ssl  12:08   1:03 python /root/catkin_ws/src/em_follow_me/src/em_followme_withDepth.py __name:=em_followme_withDepth __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_followme_withDepth-9.log
+root     21794  0.2  0.1 603984 50116 ?        Ssl  12:08   0:01 python /root/catkin_ws/src/em_speech/src/em_speech.py __name:=em_speech __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_speech-10.log
+root     21809  0.3  0.2 622316 76480 ?        Ssl  12:08   0:01 python /root/catkin_ws/src/em_spco_formation/src/em_path_plan.py map:=/update_map __name:=em_path_plan __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_path_plan-11.log
+root     21827  0.2  0.2 776192 77460 ?        Ssl  12:08   0:01 python /root/catkin_ws/src/em_spco_formation/src/em_name2place.py __name:=em_name2place __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_name2place-12.log
+root     21836  0.0  0.0      0     0 ?        Z    12:08   0:00 [sh] <defunct>
+root     21858  0.7  0.1 1194416 50868 ?       Ssl  12:08   0:03 python /root/catkin_ws/src/em_go_get_it/src/em_go_get_it.py map:=/update_map __name:=em_go_get_it_main __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/em_go_get_it_main-13.log
+root     21985  7.3  0.3 794848 111468 ?       Ssl  12:08   0:36 /opt/ros/kinetic/lib/hector_mapping/hector_mapping map:=/update_map __name:=hector_mapping __log:=/root/.ros/log/20180427-103416_89048f12-4a06-11e8-b263-003064445192/hector_mapping-4.log
+root     22113  0.0  0.0  18028  2860 pts/1    Ss+  12:17   0:00 bash -c ps aux > a.txt
+root     22119  0.0  0.0  34424  2812 pts/1    R+   12:17   0:00 ps aux

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="em_door_open" pkg="em_door_open" type="em_door_open.py" output="screen" />
+</launch>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="em_test" pkg="em_follow_me" type="em_test.py" output="screen" cwd="node" />
+</launch>
