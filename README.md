@@ -2,7 +2,7 @@
 
 ### Overview  
 
-Go get it task for Duckers2018 in RoboCup Japan Open 
+Go get it task for Ri-one&Duckers2018 in RoboCup Japan Open 
 
 Training Phaseにおいて，ロボットがオペレータをFollow meしながら地図生成を行い，物体を検出し物体の場所を記録する.その後場所の名前情報を教示してもらうことで，マルチモーダル情報から場所のカテゴリゼーションを行う． 
 
